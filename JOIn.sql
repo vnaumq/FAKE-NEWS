@@ -1,0 +1,1 @@
+SELECT * FROM dbo.news  JOIN dbo.test ON dbo.news.id = dbo.test.id
