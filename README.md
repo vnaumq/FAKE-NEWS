@@ -27,20 +27,34 @@ There are three tables contained in this sample:
   
   Where the id and label (whether the news is true 1 (unreliable) or 0 (reliable)) are contained.
 
-  ![Alt text](image-2.png)
+<p align="center">
+<img src="PNG/image-2.png" alt="Diagram of System Timer (SysTick)" width="100"/>
+</<p align="center">
+
+
 - **test.** 
   
   Where contains the same id, title(News title), author, text(News text).
 
-  ![Alt text](image-3.png)
+<p align="center">
+<img src="PNG/image-3.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 - **train.**
   
   Merging of two previous tables 
 
-  ![Alt text](image-4.png)
+<p align="center">
+<img src="PNG/image-4.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
 This dataset contains more than **20,000 strings**. But first we need to evaluate this sample and understand where the data came from. I did a little digging and found the author's response to the comment asking where the data came from. 
-![Alt text](image.png)  
+
+<p align="center">
+<img src="PNG/image.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+ 
 
 Okay, let's drop this one, because our research is **not serious**.
 
@@ -56,7 +70,11 @@ FROM dbo.news
 JOIN dbo.test ON dbo.news.id = dbo.test.id
 ```
 So we merged the two tables and got one "train" table.
-![Alt text](image-1.png)
+
+<p align="center">
+<img src="PNG/image-1.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
 **What's next?** Clean. As we can see the table contains fields containing **NULL** and **"nan"**. For this purpose we use **DELETE FROM**.
 
@@ -75,7 +93,10 @@ GROUP BY author
 ORDER BY count_news DESC 
 ```
 
-![Alt text](image-5.png)
+<p align="center">
+<img src="PNG/image-5.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
 ## DATA ANALYSIS
 
@@ -83,7 +104,10 @@ ORDER BY count_news DESC
 
 To analyze our data we must use **EXCEL**. we open the cleaned dataset with EXCEL. Next, for convenience, we calculate the number of true and fake news and also accuracy. 
 
-![Alt text](image-6.png)
+<p align="center">
+<img src="PNG/image-6.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
 ## DATA VISUALIZATION
 
@@ -91,17 +115,29 @@ To analyze our data we must use **EXCEL**. we open the cleaned dataset with EXCE
 
 To visualize my data I will choose **EXCEL**, but the same can be done in **TABLEAU**. First I made a chart showing the percentage of true and fake news.
 
-![Alt text](diagramma.png)
+<p align="center">
+<img src="PNG/diagramma.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
  Then a graph showing who made how much true or fake news. 
  
- ![Alt text](stats.png)
+<p align="center">
+<img src="PNG/stats.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
  As well as the most interesting **TOP 10 MOST HONEST AND LYING PEOPLE**.
 
- ![Alt text](<TOP 10 dishonest.png>)
+<p align="center">
+<img src="PNG/TOP 10 dishonest.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
 
- ![Alt text](<TOP 10 honest.png>)
+
+<p align="center">
+<img src="PNG/TOP 10 honest.png" alt="Diagram of System Timer (SysTick)" width="500"/>
+</<p align="center">
+
 
 ## CONCLUSIONS
 
