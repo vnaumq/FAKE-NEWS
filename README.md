@@ -1,5 +1,6 @@
 # FAKE NEWS 
 
+![ViewCount](https://views.whatilearened.today/views/github/vnaumq/FAKE-NEWS.svg?cache=remove)
 
 ## Introduction 
 
